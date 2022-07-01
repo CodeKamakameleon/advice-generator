@@ -22,13 +22,13 @@ body {
   background-color: var(--dark-blue);
 }
 
-.container {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
   background-color: var(--dark-grayish-blue);
-  max-width: 340px;
+  width: 340px;
   height: 315px;
 }
 
@@ -42,6 +42,7 @@ body {
   font-weight: 800;
   text-align: center;
   color: var(--light-cyan);
+  padding-top: 20px;
 }
 
 .divider {
@@ -52,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 .dice {
@@ -68,6 +70,9 @@ body {
   width: 62px;
   height: 62px;
   border: none;
+  position: absolute;
+  bottom: -190px;
+  left: 135px;
 }
 
 .button:hover {
@@ -79,11 +84,13 @@ body {
 }
 
 .baseline {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 1440px) {
@@ -95,7 +102,16 @@ body {
     max-width: 1440px;
   }
 
-  .container {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 540px;
+    padding-left: 10px;
+    margin-left: 100px;
+  }
+
+  .button {
+    left: 250px;
   }
 } ;
